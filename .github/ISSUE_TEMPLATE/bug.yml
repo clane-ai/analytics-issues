@@ -1,0 +1,47 @@
+name: Bug report
+description: Something in Clane Analytics doesn't work as it should
+labels: ["bug", "triage"]
+body:
+  - type: markdown
+    attributes:
+      value: "**Do not attach customer data.** Redact screenshots and describe the shape of the data instead. Security issues go to security@clane.ai, never here."
+  - type: input
+    id: version
+    attributes:
+      label: Version
+      description: Settings → About, or the image tag you deployed
+      placeholder: "1.1.0"
+    validations:
+      required: true
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options: [Extract sheet, Reports and canvas, Chat and agent, Model Studio, Data sources, Schedules and email, Sign-in and branding, Admin and governance, Deployment and upgrade, Other]
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: "1. Open … 2. Click … 3. …"
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What you expected
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: What happened
+      description: Include the exact message shown, if any.
+    validations:
+      required: true
+  - type: input
+    id: env
+    attributes:
+      label: Browser and OS
+      placeholder: "Edge 154 on Windows 11"

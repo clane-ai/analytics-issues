@@ -1,0 +1,19 @@
+name: Feature request
+description: Something Clane Analytics should do
+labels: ["feature", "triage"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: What are you trying to do?
+      description: The job, not the button. "Send a weekly extract to a team" beats "add a button".
+    validations:
+      required: true
+  - type: textarea
+    id: today
+    attributes:
+      label: How do you do it today?
+  - type: textarea
+    id: proposal
+    attributes:
+      label: What would help?
